@@ -15,10 +15,10 @@ export default function Navbar() {
 
                 {/* CENTER: Nav links */}
                 <ul className="flex justify-center space-x-10 text-black text-xs font-bold">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/portfolio">Portfolio</a></li>
                     <li><a href="/Hubert_Krzemieniewski_CV.pdf">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
 
                 {/* RIGHT: Socials */}

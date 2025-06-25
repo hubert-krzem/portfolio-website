@@ -51,16 +51,16 @@ export default function Home() {
 
             <ul className="space-y-4">
               <li className="underline">
-                <a href="about">Learn more about me →</a>
+                <a href="/about">Learn more about me →</a>
               </li>
               <li className="underline">
-                <a href="portfolio">Check out my portfolio →</a>
+                <a href="/portfolio">Check out my portfolio →</a>
               </li>
               <li className="underline">
                 <a href="/Hubert_Krzemieniewski_CV.pdf">See my resume →</a>
               </li>
               <li className="underline">
-                <a href="contact">Reach out, lets chat →</a>
+                <a href="/contact">Reach out, lets chat →</a>
               </li>
             </ul>
           </div>

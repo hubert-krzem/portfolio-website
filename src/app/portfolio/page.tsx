@@ -1,11 +1,12 @@
-import PortfolioEntry from "@/components/PortfolioEntry";
+import PortfolioEntryLeft from "@/components/PortfolioEntryLeft";
+import PortfolioEntryRight from "@/components/PortfolioEntryRight";
 
 export default function Portfolio() {
   return (
-    <main className="text-black font-bold max-w-6xl mx-auto">
+    <main className="text-black font-bold max-w-6xl mx-auto p-4">
         {/* Portfolio header */}
         <header className="
-            mb-6 flex flex-col text-3xl p-4
+            mb-6 flex flex-col text-3xl
             md:flex-row md:items-center md:justify-between gap-4">
             <h1>Check out my portfolio</h1>
 
@@ -18,7 +19,9 @@ export default function Portfolio() {
 
         {/* Elements */}
         <section>
-            <PortfolioEntry />
+            <PortfolioEntryLeft />
+            <PortfolioEntryRight />
+
         </section>
     </main>
   );

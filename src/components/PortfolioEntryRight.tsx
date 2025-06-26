@@ -1,7 +1,15 @@
 import PortfolioPolaroidBlob from "./PortfolioPolaroidBlob";
 
+type PortfolioEntryProps = {
+  title: string;
+  description: string;
+  image?: string;
+  label?: string;
+  date?: string;
+};
+
 {/* Portfolio Entry element  */}
-export default function PortfolioEntry() {
+export default function PortfolioEntryLeft({ title, description, image, label, date}: PortfolioEntryProps) {
     return (
         <section className="flex flex-row justify-between items-stretch w-full gap-8">
             {/* Polaroid image */}
@@ -11,11 +19,12 @@ export default function PortfolioEntry() {
 
             {/* Title and text */}
             <div className="w-2/3 space-y-4 text-base">
-                <h2 className="text-3xl">Lorem Ipsum</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br></br>
-                    <br></br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br></br>
-                    <br></br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <h2 className="text-3xl underline">{title}</h2>
+
+                {/* Code for splitting up text in description input by \n\n */}
+                {description.split('\n').map((paragraph, i) => (
+                <p key={i}>{paragraph}</p>
+                ))}
             </div>
         </section>
     );

@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 {/* Blob + polaroid combo */}
 export default function PolaroidBlob() {
     return (
@@ -20,7 +22,7 @@ export default function PolaroidBlob() {
           </svg>
 
           {/* IMG to hold and display polaroid */}
-          <img
+          <Image
             src="/polaroid-frame.png"
             alt="Project preview"
             className="relative z-10 w-1/2 h-auto rotate-10 hover:rotate-2 transition-transform duration-300 ease-in-out"

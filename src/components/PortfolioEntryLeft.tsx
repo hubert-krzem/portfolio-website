@@ -3,13 +3,14 @@ import PortfolioPolaroidBlob from "./PortfolioPolaroidBlob";
 type PortfolioEntryProps = {
   title: string;
   description: string;
-  image?: string;
-  label?: string;
-  date?: string;
+  // image?: string;
+  // rotate?: number;
+  // label?: string;
+  // date?: string;
 };
 
 {/* Portfolio Entry element  */}
-export default function PortfolioEntryRight({ title, description, image, label, date}: PortfolioEntryProps) {
+export default function PortfolioEntryRight({ title, description, /* rotate=10, image, label, date*/ }: PortfolioEntryProps) {
     return (
         <section className="flex flex-row justify-between items-stretch w-full gap-8">
             {/* Title and text */}
@@ -23,7 +24,7 @@ export default function PortfolioEntryRight({ title, description, image, label, 
             
             {/* Polaroid image */}
             <div className="w-1/4 h-full">
-                <PortfolioPolaroidBlob />
+                <PortfolioPolaroidBlob/>
             </div>
         </section>
     );

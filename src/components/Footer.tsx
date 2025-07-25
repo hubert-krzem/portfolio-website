@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image"
 
 export default function Navbar() {
     return (
@@ -8,11 +9,14 @@ export default function Navbar() {
                 {/* LEFT: Logo*/}
                 <div className="flex items-center space-x-4">
                     {/* Logo image */}
-                        <img
+                    <Link href="/">
+                        <Image
                             src="/logo-hk.svg"
                             alt="Site logo, lowercase h and k"
-                            className="h-15 w-auto object-contain"
+                            className="h-15 w-auto object-contain cursor-pointer"
                         />
+                    </Link>
+                        
                     {/* Copyright disclaimer */}
                     <ul className="text-black text-xs font-bold"> 
                         <li>© 2025 Hubert Krzemieniewski.</li>

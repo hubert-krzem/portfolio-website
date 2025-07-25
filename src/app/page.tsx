@@ -1,4 +1,5 @@
 import PolaroidBlob from "@/components/PolaroidBlob";
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -8,15 +9,15 @@ export default function Home() {
         {/* Container for Hero items */}
         <div className="max-w-6xl mx-auto h-full flex flex-col justify-between pt-[145px] text-4xl">
 
-          <p>Hi, I'm Hubert Krzemieniewski</p>
+          <p>Hi, I&apos;m Hubert Krzemieniewski</p>
 
           {/* Container holding polaroid and label text */}
           <div className="pt-25 flex justify-between items-center">
-            <img
-            src="/polaroid-headshot.png"
-            alt="Project preview"
-            className="relative z-10 w-1/3 h-auto rotate-345 hover:rotate-360 transition-transform duration-300 ease-in-out"
-          />
+            <Image
+              src="/polaroid-headshot.png"
+              alt="Project preview"
+              className="relative z-10 w-1/3 h-auto rotate-345 hover:rotate-360 transition-transform duration-300 ease-in-out"
+            />
 
           {/* Changing element with different titles */}
           <p>
@@ -37,7 +38,7 @@ export default function Home() {
         <div className="flex flex-row">
           <div className="space-y-4"> {/* New div to create a flex box to contain elements in line */}
             <p> {/* top text */}
-              I'm a third year Computer Science student at University College Dublin, Ireland.
+              I&apos;m a third year Computer Science student at University College Dublin, Ireland.
               <br></br>
               Currently building sites, and personal projects.
             </p>

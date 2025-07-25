@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
     return (
@@ -6,7 +7,7 @@ export default function Navbar() {
             <div className="grid grid-cols-3 max-w-6xl mx-auto items-center p-4 w-full"> 
                 {/* LEFT: Logo */}
                 <Link href="/">
-                    <img
+                    <Image
                         src="/logo-hk.svg"
                         alt="Site logo, lowercase h and k"
                         className="h-15 w-auto object-contain cursor-pointer"
